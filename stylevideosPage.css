@@ -28,10 +28,6 @@ h1 {
   max-width: 95%;
 }
 
-.image {
-  margin-left: .4cm;
-}
-
 a.link:link, a.link:hover, a.link:active, a.link:visited {
     color: #c81d24;
     cursor: auto;

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title> Home101 Videos </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesingleVideoTemplate.css">
+  </head>
+
+  <body>
+    <!-- Navbar on small screens -->
+  <div class="w3-top">
+    <div class="w3-bar w3-card-2" style="background-color: #c81d24; color: white;">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+      <a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
+      <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+      <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-padding-large w3-button" title="More"> LESSONS <i class="fa fa-caret-down"></i></button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="videosPage.html#Finances" class="w3-bar-item w3-button">Finances</a>
+          <a href="videosPage.html#HomeDuties" class="w3-bar-item w3-button">Home Duties</a>
+          <a href="videosPage.html#Career" class="w3-bar-item w3-button">Career</a>
+        </div>
+      </div>
+     </div>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px; background-color: #c81d24; color: white;">
+    <a href="about.html" class="w3-bar-item w3-button w3-padding-large">ABOUT</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-padding-large">CONTACT</a>
+    <a href="videosPage.html" class="w3-bar-item w3-button w3-padding-large">LESSONS</a>
+  </div>
+    <div class= "lass="w3-container-fluid w3-content w3-padding-64"">
+    <!-- Start here -->
+      <center>
+    <h1> Home Duties Quiz </h1>
+      </center>
+    <!-- Insert embed code for video here -->
+    <div class="w3-container-fluid w3-center w3-content w3-padding-64">
+      <center>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScLWUHUhHc6icZdfIC5o9KVpku3Uqs2uMd_lIvsyoNOtO0cGg/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+      </center>
+  </div>
+    <!-- Credits and Article -->
+    <div>
+    <p class="credits"> CREDITS: </p>
+    <p class="creditsText"> Blank Canvas - Angela Zheng </p>
+
+    <h3 class="article"> Home Duties Quiz </h3>
+    <p class="articleText"> Have you gone through all the home duty videos? Well here is a quiz where you can see whether or not you have been paying attention to the videos! </p>
+  </div>
+</div>
+  </body> <script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</html>
